@@ -178,6 +178,13 @@ async def spa_fallback(path: str = ""):
 # app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 # ------------------------------------------------------------------------------
+# Root redirect to https://getsaferwatch.com
+# ------------------------------------------------------------------------------
+@app.get("/")
+def root_redirect():
+    return RedirectResponse(url="https://getsaferwatch.com")
+
+# ------------------------------------------------------------------------------
 # Catch-all redirect for short IDs at root (must be last)
 # ------------------------------------------------------------------------------
 @app.get("/{short_id}")
