@@ -2,6 +2,7 @@
   "name": "saferwatch-frontend",
   "version": "1.0.0",
   "private": true,
+  "homepage": "/url-shortner",
   "dependencies": {
     "axios": "^1.6.0",
     "react": "^18.2.0",
