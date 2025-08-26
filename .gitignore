@@ -1,0 +1,11 @@
+# Simple .gitignore for Python and Node
+__pycache__/
+*.pyc
+*.pyo
+*.sqlite3
+urls.db
+node_modules/
+build/
+dist/
+.env
+.DS_Store
